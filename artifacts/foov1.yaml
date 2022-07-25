@@ -2,3 +2,5 @@ apiVersion: stable.example.com/v1
 kind: Foo
 metadata:
   name: foov1
+spec:
+  data: "abc123,d8,"

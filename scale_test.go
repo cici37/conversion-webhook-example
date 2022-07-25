@@ -56,67 +56,11 @@ func benchmarkCreateLatency(b *testing.B, client BenchmarkClient) {
 	}
 }
 
-func Benchmark_CreateLatency_CRWithConvert(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CRWithConvert_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CRWithConvert_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CRWithConvert_Validation(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CRWithConvert_Validation_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CRWithConvert_Validation_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CR(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CR_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CR_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
 func Benchmark_CreateLatency_CR_Validation(b *testing.B) {
 	runBenchmark(b)
 }
 
 func Benchmark_CreateLatency_CR_Validation_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_CR_Validation_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_Endpoints_Typed(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_Endpoints_Typed_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_Endpoints_Dynamic(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateLatency_Endpoints_Dynamic_LargeMetadata(b *testing.B) {
 	runBenchmark(b)
 }
 
@@ -143,27 +87,11 @@ func benchmarkCreateThroughput(b *testing.B, client BenchmarkClient) {
 	fmt.Printf("created %d objects in %v\n", count, time.Now().Sub(start))
 }
 
-func Benchmark_CreateThroughput_CRWithConvert(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateThroughput_CRWithConvert_Validation(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateThroughput_CR(b *testing.B) {
-	runBenchmark(b)
-}
-
 func Benchmark_CreateThroughput_CR_Validation(b *testing.B) {
 	runBenchmark(b)
 }
 
-func Benchmark_CreateThroughput_Endpoints_Typed(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_CreateThroughput_Endpoints_Dynamic(b *testing.B) {
+func Benchmark_CreateThroughput_CR_Validation_LargeData(b *testing.B) {
 	runBenchmark(b)
 }
 
@@ -181,42 +109,6 @@ func benchmarkList(b *testing.B, client BenchmarkClient, listSize int) {
 	}
 }
 
-func Benchmark_List_CRWithConvert(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CRWithConvert_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CRWithConvert_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CRWithConvert_Validation(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CRWithConvert_Validation_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CRWithConvert_Validation_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CR(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CR_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_CR_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
 func Benchmark_List_CR_Validation(b *testing.B) {
 	runBenchmark(b)
 }
@@ -225,87 +117,11 @@ func Benchmark_List_CR_Validation_LargeData(b *testing.B) {
 	runBenchmark(b)
 }
 
-func Benchmark_List_CR_Validation_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_Endpoints_Typed(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_Endpoints_Dynamic(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_Endpoints_Typed_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_Endpoints_Dynamic_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CRWithConvert(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CRWithConvert_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CRWithConvert_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CRWithConvert_Validation(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CRWithConvert_Validation_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CRWithConvert_Validation_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CR(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CR_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CR_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
 func Benchmark_List_WatchCache_CR_Validation(b *testing.B) {
 	runBenchmark(b)
 }
 
 func Benchmark_List_WatchCache_CR_Validation_LargeData(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_CR_Validation_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_Endpoints_Typed(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_Endpoints_Dynamic(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_Endpoints_Typed_LargeMetadata(b *testing.B) {
-	runBenchmark(b)
-}
-
-func Benchmark_List_WatchCache_Endpoints_Dynamic_LargeMetadata(b *testing.B) {
 	runBenchmark(b)
 }
 
@@ -344,17 +160,7 @@ func benchmarkWatch(b *testing.B, client BenchmarkClient, listSize int) {
 	fmt.Printf("processed %d watch events in %v\n", watcherCount*events, time.Now().Sub(start))
 }
 
-func BenchmarkWatchCRWithConvert(b *testing.B) {
-	c := mustNewDynamicBenchmarkClient(foov1GVR, emptyNamespace, foov1Template, &metav1.ListOptions{})
-	benchmarkWatch(b, c, testListSize)
-}
-
 func BenchmarkWatchCR(b *testing.B) {
-	c := mustNewDynamicBenchmarkClient(barGVR, emptyNamespace, barTemplate, &metav1.ListOptions{})
-	benchmarkWatch(b, c, testListSize)
-}
-
-func BenchmarkWatchEndpointsTyped(b *testing.B) {
-	c := mustNewEndpointsBenchmarkClient(emptyNamespace, endpointsTemplate, &metav1.ListOptions{})
+	c := mustNewDynamicBenchmarkClient(foov1GVR, emptyNamespace, foov1Template, &metav1.ListOptions{})
 	benchmarkWatch(b, c, testListSize)
 }
